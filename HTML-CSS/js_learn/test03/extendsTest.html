@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <p id="demo"></p>
+
+    <script>
+    "use strict"
+    class Site {
+        constructor(name) {
+          this.siteName = name;
+        }
+        present() {
+          return 'i like this ' + this.siteName;
+        }
+      }
+
+      class Ruuoob extends Site {
+        constructor(name, age) {
+          super(name);
+          this.age = age;
+        }
+        show() {
+          return this.present() + ', it has been created ' + this.age;
+        }
+      }
+
+      let noob = new Ruuoob('cainiaojiaocheng', 5);
+      document.getElementById('demo').innerHTML = noob.show();
+    </script>
+  </body>
+</html>

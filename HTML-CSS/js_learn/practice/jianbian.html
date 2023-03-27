@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>渐变</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        height: 100vh;
+        display: flex;
+      }
+      .demo {
+        margin: auto;
+        color: white;
+        font-size: 50px;
+        font-weight: bolder;
+        position: relative;
+      }
+
+      .demo::before {
+        content: 'Java Script Helper';
+        color: #06ee99;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        top: 0;
+        width: 5px;
+        border-right: 5px solid #06ee99;
+        animation: animate 8s linear infinite;
+        filter: drop-shadow(0 0 50px #06ee99);
+      }
+
+      @keyframes animate {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">Java Script Helper</div>
+  </body>
+</html>

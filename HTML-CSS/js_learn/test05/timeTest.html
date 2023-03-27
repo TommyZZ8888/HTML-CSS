@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom timer</title>
+  </head>
+
+  <script>
+    var myvar = setInterval(function () {
+      new myTime();
+    }, 1000);
+
+    function myTime() {
+      var d = new Date();
+      var t = d.toLocaleTimeString();
+      document.getElementById('demo').innerHTML = t;
+    }
+    function stopTime() {
+      clearInterval(myvar);
+    }
+    function setTime() {
+      setTimeout(function () {
+        alert('3 second is over');
+      }, 3000);
+    }
+
+
+    "use strict";
+const week = ['天', '一', '二', '三', '四', '五', '六'],
+    dom = document.getElementById("dateTxt"),
+    checkTime = i => (i < 10) ? `0${i}` : i; // 在小于10的数字前加一个‘0’
+let today;
+
+function startTime() {
+    today = new Date();
+    dom.innerHTML = `星期${week[today.getDay()]} ：${checkTime(today.getHours())}:${checkTime(today.getMinutes())}:${checkTime(today.getSeconds())}`;
+}
+setInterval(startTime, 500); //循环计时
+  </script>
+
+  <body>
+    <!-- <p id="demo"></p> -->
+    <input type="button" value="stop" onclick="new stopTime()" />
+    <button onclick="new stopTime()">tingzhi</button>
+
+    <button onclick="new setTime()">click me wait 3 second</button>
+
+    <p id="dateTxt"></p>
+  </body>
+</html>
