@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box" title="盒子" data-my-name="smyhave" data-content="im a div">div</div>
+
+
+    <div class="tabs">
+        <nav>
+            <a href="javascript:;" data-cont="local">国内新闻</a>
+            <a href="javascript:;" data-cont="global">国际新闻</a>
+            <a href="javascript:;" data-cont="sports">体育新闻</a>
+            <a href="javascript:;" data-cont="funny">娱乐新闻</a>
+        </nav>
+        <section class="cont" id="local">
+            <ol>
+                <li>国内新闻1</li>
+                <li>国内新闻2</li>
+                <li>国内新闻3</li>
+                <li>国内新闻4</li>
+                <li>国内新闻5</li>
+                <li>国内新闻6</li>
+                <li>国内新闻7</li>
+            </ol>
+        </section>
+        <section class="cont" id="global">
+            <ol>
+                <li>国内新闻1</li>
+                <li>国际新闻2</li>
+                <li>国际新闻3</li>
+                <li>国际新闻4</li>
+                <li>国际新闻5</li>
+                <li>国际新闻6</li>
+            </ol>
+        </section>
+        <section class="cont" id="sports">
+            <ol>
+                <li>体育新闻1</li>
+                <li>体育新闻2</li>
+                <li>体育新闻3</li>
+                <li>体育新闻4</li>
+                <li>体育新闻5</li>
+                <li>体育新闻6</li>
+                <li>体育新闻7</li>
+            </ol>
+        </section>
+        <section class="cont" id="funny">
+            <ol>
+                <li>娱乐新闻1</li>
+                <li>娱乐新闻2</li>
+                <li>娱乐新闻3</li>
+                <li>娱乐新闻4</li>
+                <li>娱乐新闻5</li>
+                <li>娱乐新闻6</li>
+                <li>娱乐新闻7</li>
+            </ol>
+        </section>
+    </div>
+
+    <script>
+
+
+
+
+        var box = document.querySelector('.box');
+
+        //自定义的属性 需要通过 dateset[]方式来获取
+        console.log(box.dataset["content"]);  //打印结果：我是一个div
+        console.log(box.dataset["myName"]);    //打印结果：smyhvae
+
+        //设置自定义属性的值
+        var num = 100;
+        num.index = 10;
+        box.index = 100;
+        box.dataset["content"] = "aaaa";
+
+    </script>
+</body>
+</html>
