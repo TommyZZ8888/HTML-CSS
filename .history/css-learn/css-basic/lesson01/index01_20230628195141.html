@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p{
+	font-size: 50px; 		/*字体大小*/
+	line-height: 30px;      /*行高*/
+	font-family: 幼圆,黑体; 	/*字体类型：如果没有幼圆就显示黑体，没有黑体就显示默认*/
+	font-style: italic ;		/*italic表示斜体，normal表示不倾斜*/
+	font-weight: bold;	/*粗体*/
+	font-variant: small-caps;  /*小写变大写*/
+}
+
+	div{
+			width: 100px;
+			height: 100px;
+			background-color: #00cc66;
+			margin-right: 100px;
+			float: left;
+		}
+
+		#div1{
+			overflow: auto;/*超出的部分让浏览器自行解决*/
+		}
+		#div2{
+			overflow: visible;/*超出的部分会显示出来*/
+		}
+
+		#div3{
+			overflow: hidden;/*超出的部分将剪切掉*/
+		}
+
+        	ul{
+
+			list-style: none;/*去掉列表前面的圆点*/
+			width: 420px;
+            margin-top: 300px;
+			height: 60px;
+			background-color: black;/*设置整个导航栏的背景为灰色*/
+		}
+
+		li{
+			float: left;/*平铺*/
+			margin-right: 30px;
+			margin-top: 16px;
+            padding-top: 15px;
+		}
+
+		a{
+			text-decoration: none;/*去掉超链的下划线*/
+			font-size: 20px;
+			color: #BBBBBB;/*设置超链的字体为黑色*/
+			font-family:微软雅黑;
+		}
+</style>
+<body>
+
+    <p>孙燕姿孙燕姿孙燕姿孙燕姿孙燕姿</p>
+
+    <div id="div1">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+    <div id="div2">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+    <div id="div3">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+
+
+    <ul>
+        <li><a href="">博客园</a></li>
+        <li><a href="">新随笔</a></li>
+        <li><a href="">联系</a></li>
+        <li><a href="">订阅</a></li>
+        <li><a href="">管理</a></li>
+
+    </ul>
+</body>
+</html>
