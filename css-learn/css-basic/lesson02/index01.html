@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*行内元素：与其他行内元素并排；不能设置宽、高。默认的宽度，就是文字的宽度。*/
+        /*块级元素: 霸占一行，不能与其他任何元素并列；能接受宽、高。如果不设置宽度，那么宽度将默认变为父亲的100%。*/
+        /* h1 { */
+        /*变行内元素*/
+        /* display: inline;
+        background-color: pink;
+        width: 500px;
+        height: 80px;
+    }
+    span { */
+        /*变块内元素*/
+        /* display: block;
+        background: red;
+        width: 500px;
+        height: 80px;
+    } */
+        
+        .box1 {
+            float: left;
+            width: 300px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .box2 {
+            width: 500px;
+            height: 100px;
+            background-color: skyblue;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+        
+        .p1 {
+            float: left;
+            width: 100px;
+            height: 300px;
+            background-color: blue;
+        }
+        
+        .p2 {
+            float: left;
+            /* width: 200px; */
+            width: 400px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>孙燕姿</h1>
+    <span>孙燕姿</span>-->
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div>
+        <p class="p1"></p>
+        <p class="p2"></p>
+    </div>
+
+</body>
+
+</html>
+
+</html>

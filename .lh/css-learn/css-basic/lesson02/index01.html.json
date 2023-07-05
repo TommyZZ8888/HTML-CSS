@@ -1,0 +1,46 @@
+{
+    "sourceFile": "css-learn/css-basic/lesson02/index01.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1688551667652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688551821991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <h1></h1>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551827453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <h1>n</h1>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551838705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <h1>孙燕姿</h1>\r\n+    <h1>孙燕姿</h1>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551847296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,49 +9,8 @@\n \r\n <body>\r\n     <h1>孙燕姿</h1>\r\n     <h1>孙燕姿</h1>\r\n+    <p></p>\r\n </body>\r\n \r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <h1>n</h1>\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <h1></h1>\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-\r\n-</body>\r\n-\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551856440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <h1>孙燕姿</h1>\r\n+    <h1>孙燕姿</h1>\r\n+    <p>孙燕姿</p>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551864465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n <body>\r\n     <h1>孙燕姿</h1>\r\n     <h1>孙燕姿</h1>\r\n     <p>孙燕姿</p>\r\n-    <p></p>\r\n+    <p>孙燕姿</p>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688551883834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+    <style>\r\n+\r\n+    </style>\r\n+</head>\r\n+\r\n+<body>\r\n+    <h1>孙燕姿</h1>\r\n+    <h1>孙燕姿</h1>\r\n+    <p>孙燕姿</p>\r\n+    <p>孙燕姿</p>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1688551667652,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n\r\n<body>\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}
