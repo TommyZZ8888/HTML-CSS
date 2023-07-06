@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性02</title>
+</head>
+<style>
+    .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        margin: 20px auto;
+        /*只让宽度在变化时进行过度*/
+        transition: width 2s linear 0s;
+    }
+
+    .div1:hover {
+        width: 300px;
+        background-color: orange;
+    }
+
+    .box {
+        width: 500px;
+        margin: 50px auto;
+    }
+
+    .box div {
+        width: 150px;
+        height: 75px;
+        background-color: pink;
+        float: left;
+        margin-right: 15px;
+        color: white;
+        text-align: center;
+        font: 400 30px/75px "宋体";
+    }
+
+    .box .box
+
+    .box .box2:hover {
+        background-color: yellowgreen;
+        transform: scale(2, 0.5);
+    }
+</style>
+
+<body>
+
+    <div class="div1"></div>
+
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+
+</body>
+
+</html>

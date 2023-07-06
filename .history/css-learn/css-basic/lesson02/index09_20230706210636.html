@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性02</title>
+</head>
+<style>
+
+
+    .box {
+        width: 1000px;
+        margin: 80px auto;
+    }
+
+    .box > div {
+        width: 150px;
+        height: 75px;
+          border: 1px solid #000;
+        background-color: pink;
+        float: left;
+        margin-right: 30px;
+
+    }
+
+   div:nth-child(2){
+    background-color: red;
+    transition: all 1s;
+   }
+
+   div:nth-child(2):hover{
+    transform: translate(-50%,-50%);
+   }
+
+   div:nth-child(1){
+    font: 400 20px/75px "宋体";
+    text-align: center;
+    transition: all 2s;
+   }
+   div:nth-child(1):hover{
+    transform: rotate(-405);
+   }
+</style>
+
+<body>
+
+
+
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+
+</body>
+
+</html>

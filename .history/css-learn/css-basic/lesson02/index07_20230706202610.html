@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性01</title>
+</head>
+<style>
+    body {
+        background-color: #666;
+    }
+
+    .div1 {
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Microsoft Yahei";
+        color: #666;
+        text-shadow: -1px -1px #fff, 1px 1px 1px #000;
+    }
+
+    .div2 {
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Microsoft Yahei";
+        color: #666;
+        text-shadow: -1px -1px #000, 1px 1px 1px #fff;
+    }
+
+    .parent {
+        width: 400px;
+    }
+	/* border-radius: 60px/120px;             //参数：水平半径/垂直半径
+
+	border-radius: 20px 60px 100px 140px;  //从左上开始，顺时针赋值。如果当前角没有值，取对角的值
+
+	border-radius: 20px 60px; */
+    .box {
+        width: 100px;
+        height: 100px;
+        float: left;
+        border: 1px solid rgb(144, 12, 63);
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+        font-size: 30px;
+        background-color: rgb(255, 141, 26);
+    }
+
+    .box:nth-child(1) {
+        border-radius: 50px;
+    }
+    .box:nth-child(2){
+        border-radius: 50%;
+    }
+    .box:nth-child(3){
+        border-radius: 100px 0 0;
+    }
+.box:nth-child(4){
+    border-radius: 100px/50px;
+}
+.box:nth-child(5){
+    border-radius: 10%;
+}
+.box:nth-child(6){
+    border-radius: 0 100px;
+}
+.zz{
+    width: 200px;
+    
+}
+</style>
+
+<body>
+    <div class="div1">孙燕姿</div>
+    <div class="div2">stefanie</div>
+
+
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+    <div class="zz"></div>
+</body>
+
+</html>
