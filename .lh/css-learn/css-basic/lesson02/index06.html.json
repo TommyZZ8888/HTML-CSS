@@ -1,0 +1,114 @@
+{
+    "sourceFile": "css-learn/css-basic/lesson02/index06.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1688638594740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1688638613353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n </head>\r\n \r\n <body>\r\n \r\n+\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638618667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div></div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638626798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638634809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span></span>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638643591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638649457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+        <div class=\"\"></div>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638656127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+        <div class=\"image\">\r\n+            <img src=\"\" alt=\"\">\r\n+        </div>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638666052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+        <div class=\"image\">\r\n+            <img src=\"http://img.smyhvae.com/20180116_1116.jpg\" alt=\"\">\r\n+        </div>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638673001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+        <div class=\"image\">\r\n+            <img src=\"http://img.smyhvae.com/20180116_1116.jpg\" alt=\"\">\r\n+        </div>\r\n+        <h4></h4>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638680532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+\r\n+<body>\r\n+    <div class=\"box\">\r\n+        <span class=\"dtc\"></span>\r\n+        <div class=\"image\">\r\n+            <img src=\"http://img.smyhvae.com/20180116_1116.jpg\" alt=\"\">\r\n+        </div>\r\n+        <h4>广东深圳宝安区</h4>\r\n+    </div>\r\n+\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638699053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,11 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n+<style>\r\n+    .box {}\r\n+</style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n         <span class=\"dtc\"></span>\r\n@@ -17,166 +20,5 @@\n     </div>\r\n \r\n </body>\r\n \r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span class=\"dtc\"></span>\r\n-        <div class=\"image\">\r\n-            <img src=\"http://img.smyhvae.com/20180116_1116.jpg\" alt=\"\">\r\n-        </div>\r\n-        <h4></h4>\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span class=\"dtc\"></span>\r\n-        <div class=\"image\">\r\n-            <img src=\"http://img.smyhvae.com/20180116_1116.jpg\" alt=\"\">\r\n-        </div>\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span class=\"dtc\"></span>\r\n-        <div class=\"image\">\r\n-            <img src=\"\" alt=\"\">\r\n-        </div>\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span class=\"dtc\"></span>\r\n-        <div class=\"\"></div>\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span class=\"dtc\"></span>\r\n-\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-        <span></span>\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div class=\"box\">\r\n-\r\n-    </div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-    <div></div>\r\n-\r\n-</body>\r\n-\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-\r\n-<body>\r\n-\r\n-\r\n-</body>\r\n-\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1688638704739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <style>\r\n-    .box {}\r\n+    .box {\r\n+        mar\r\n+    }\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638712564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n </head>\r\n <style>\r\n     .box {\r\n-        mar\r\n+        margin: 100;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638720490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n     <title>Document</title>\r\n </head>\r\n <style>\r\n     .box {\r\n-        margin: 100;\r\n+        margin: 100px;\r\n+        width: 308px;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638738049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n <style>\r\n     .box {\r\n         margin: 100px;\r\n         width: 308px;\r\n+        height: 307px;\r\n+        border: 1px solid red;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638746471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n         margin: 100px;\r\n         width: 308px;\r\n         height: 307px;\r\n         border: 1px solid red;\r\n+        position: inherit;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638754005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,12 @@\n         margin: 100px;\r\n         width: 308px;\r\n         height: 307px;\r\n         border: 1px solid red;\r\n-        position: inherit;\r\n+        position: relative;\r\n     }\r\n+\r\n+    .box .im\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638760229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         border: 1px solid red;\r\n         position: relative;\r\n     }\r\n \r\n-    .box .im\r\n+    .box .image img {}\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638767429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n         border: 1px solid red;\r\n         position: relative;\r\n     }\r\n \r\n-    .box .image img {}\r\n+    .box .image img {\r\n+        width: 308px;\r\n+    }\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638776127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     }\r\n \r\n     .box .image img {\r\n         width: 308px;\r\n+        height: 196px;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638782118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,10 @@\n     .box .image img {\r\n         width: 308px;\r\n         height: 196px;\r\n     }\r\n+\r\n+    .box .dt\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638787267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n         width: 308px;\r\n         height: 196px;\r\n     }\r\n \r\n-    .box .dt\r\n+    .box .dtc {\r\n+        di\r\n+    }\r\n </style>\r\n \r\n <body>\r\n     <div class=\"box\">\r\n"
+                },
+                {
+                    "date": 1688638793290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         height: 196px;\r\n     }\r\n \r\n     .box .dtc {\r\n-        di\r\n+        display: ;\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1688638800744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     }\r\n \r\n     .box .dtc {\r\n         display: block;\r\n-        width: 52px;\r\n+        width: 52px;h\r\n     }\r\n </style>\r\n \r\n <body>\r\n"
+                }
+            ],
+            "date": 1688638594740,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n\r\n<body>\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}
