@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 100px;
+    animation: move2 4s;
+}
+
+@keyframes move1{
+    from{
+        transform: translateX(0px) rotate(0deg);
+    }
+    to{
+        transform: translateX(250px) rotate(555deg);
+    }
+}
+
+@keyframes move2{
+0%{
+    transform: translateX(0px) ro;
+}
+}
+</style>
+<body>
+<div class="box"></div>
+</body>
+</html>
