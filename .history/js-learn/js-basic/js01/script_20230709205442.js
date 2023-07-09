@@ -1,0 +1,3 @@
+const name = 'stefanie'
+
+name

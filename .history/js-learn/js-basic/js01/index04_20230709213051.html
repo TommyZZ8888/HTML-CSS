@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-04-内置对象</title>
+</head>
+
+<body>
+
+    <script>
+        const name = 'stefanie'
+
+        // console.log(name.indexOf('a'))
+        // console.log(name.includes('a'))
+
+
+        var str = 'smyhvaevaesmyhvae';
+       var map = new Map()
+       map.set('zero',0 );
+        map.set('one'1, );
+    for (var i = 0; i < str.length; i++) {
+    if(map.has(str.charAt(i))){
+       var count= map.get(str.charAt(i))
+        map.set(str.charAt(i),count++)
+    }else{
+        map.set(str.charAt(i),1)
+    }
+}
+console.log(String(map))
+
+const num = 0;
+var ans = ''
+map.forEach((key,value)=>{
+    if(value>num){
+        num = value
+        ans = key
+    }
+});
+
+console.log(ans)
+console.log(num)
+
+
+</script>
+</body>
+
+</html>
