@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的常见方法</title>
+</head>
+
+<body>
+    <script>
+        const name = 'stefanie'
+        console.log(Array.from(name))
+
+
+        var arr = ['stefanie', '孙燕姿', 'Tommy']
+        var result1 = arr.push('js')
+        arr.push('nothing')
+        console.log(result1)
+
+        var result2 = arr.pop()
+        console.log(result2)
+
+        arr.unshift('dinner')
+        var result3 = arr.shift()
+        console.log(result3)
+
+        console.log(Array(3).fill('f'))
+
+        let arr2 = [5, 2, 0, 3, 7, 8, 6]
+        let result4 = arr2.sort((a, b) => a - b)
+        console.log(result4)
+
+
+        var arr1 = ['千古', '宿敌', '南山忆', '素颜'];
+            var bool1 = arr1.every(function (item, index, array) {
+                if (item.length > 2) {
+                    return false;
+                }
+                return true;
+            });
+            console.log(bool1); //输出结果：false。只要有一个元素的长度是超过两个字符的，就返回false
+
+            let myArr = ['stefanie','joy','Tommy']
+            myArr.forEach((currentItem,currentIndex,currentArray)=>)
+    </script>
+
+</body>
+
+</html>

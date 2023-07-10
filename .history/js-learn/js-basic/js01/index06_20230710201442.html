@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组</title>
+</head>
+<body>
+
+    <script>
+        const str = [20,10,50,30,40]
+        for (let index = 0; index < str.length; index++) {
+           for (let j = 0; j < str.length-index-1; j++) {
+            if(str[j]>str[j+1]){
+                let temp = str[j]
+                str[j] = str[j+1]
+                s[j+1]=temp
+            }
+           }
+
+        }
+    </script>
+
+</body>
+</html>

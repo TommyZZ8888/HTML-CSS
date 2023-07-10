@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒计时</title>
+</head>
+<style>
+
+</style>
+<body>
+<div></div>
+
+<script>
+    var div = document.getElementsByTagName('div')[0]
+
+
+    function countDown(myTime){
+        var nowTime = new Date()
+        var future = new Date(myTime)
+
+        var timeSum = future.getTime() - nowTime.getTime()
+
+        var day = parseInt(timeSum/1000/60/60/24)
+        var hour = parseInt((timeSum/1000/60/60)%24)
+        var minute = parseInt((timeSum/1000/60)%60)
+        var second = parseInt((timeSum/1000)%60)
+        var millSecond = parseInt(timeSum%1000)
+
+        day = day<10?'0'+day:day
+        hour = hour<10?'0'+hour:hour
+        second = second<10?'0'+second:second
+        if(millSecond<10){
+            millSecond = 
+        }
+    }
+
+
+</script>
+</body>
+</html>
