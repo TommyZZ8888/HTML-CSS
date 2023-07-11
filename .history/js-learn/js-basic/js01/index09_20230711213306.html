@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作用域</title>
+</head>
+
+<body>
+    <script>
+        //函数提升优先于变量提升
+
+        fun(); // 打印 B
+
+        // 变量提升
+        var fun = function () {
+            console.log('A');
+        };
+
+        // 函数提升
+        function fun() {
+            console.log('B');
+        }
+
+        fun(); // 打印 A
+
+        function fn(a) {
+            console.log(a);
+
+            var a = 666;
+
+            console.log(a);
+
+            function a() { }
+
+            console.log(a);
+
+            var b = function () { };
+
+            console.log(b);
+
+            function c() { }
+        }
+
+        fn(1);
+
+
+        var obj1 = {
+                nickName: 'qianguyihao',
+                age: 28,
+            };
+
+            function fn1(a, b) {
+                console.log(this);
+                console.log(this.nickName);
+                console.log(a + b);
+            }
+
+            fn1.call(obj1, 2, 4); // 先将 this 指向 obj1，然后执行 fn1() 函数
+    </script>
+
+</body>
+
+</html>
