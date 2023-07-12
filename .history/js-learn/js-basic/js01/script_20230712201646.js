@@ -40,5 +40,5 @@ console.log('doOtherThing() ' + msg.toLowerCase())
 {/* <script type="text/javascript" src="myModule2.js"></script>
 <script type="text/javascript">
     myModule.doSomething1()
-    myModule.doOtherThing2()
+    myModule.doOtherthing2()
 </script> */}

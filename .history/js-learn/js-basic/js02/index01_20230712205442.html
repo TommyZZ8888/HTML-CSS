@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+
+    <script>
+        //工厂模式
+        function createPerson(name, age, gender) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.gender = gender;
+            obj.sayName = function () {
+                alert(this.name)
+            };
+            return obj
+        }
+        var obj2 = createPerson('stefanie', 18, 'girl')
+        obj2.sayName()
+
+
+
+        //利用构造函数
+        var stu1 = new Student('stefanie')
+        console.log(stu1)
+        stu1.sayHi()
+
+
+        var stu2 = new Student('vae');
+            console.log(stu2);
+            stu2.sayHi();
+
+
+        function Student(name){
+            this.name = name
+            this.sayHi = function(){
+                console.log(this.name+" good")
+            }
+        }
+
+
+            var myJson = {
+                    "name": "qianguyihao",
+                    "aaa": 111,
+                    "bbb": 222,
+                };
+
+                //json遍历的方法：for...in...
+                for (var key in myJson) {
+                    console.log(key); //获取 键
+                    console.log(myJson[key]); //获取 值（第二种属性绑定和获取值的方法）
+                    console.log('------');
+                }
+    </script>
+
+</body>
+
+</html>

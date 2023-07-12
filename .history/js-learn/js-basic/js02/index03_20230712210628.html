@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深拷贝浅拷贝</title>
+</head>
+<body>
+<script>
+    const myObj = {
+            name: 'qianguyihao',
+            age: 28,
+        };
+
+        // 【写法1】浅拷贝：把 myObj 拷贝给 obj1
+        const obj1 = {};
+        Object.assign(obj1, myObj);
+
+        // 【写法2】浅拷贝：把 myObj 拷贝给 obj2
+        const obj2 = Object.assign({}, myObj);
+
+        // 【写法3】浅拷贝：把 myObj 拷贝给 obj31。注意，这里的 obj31 和 obj32 其实是等价的，他们指向了同一个内存地址
+        const obj31 = {};
+        const obj32 = Object.assign(obj31, myObj);
+
+
+        const obj3 = {
+                name: 'qianguyihao',
+                age: 28,
+                desc: 'hello world',
+            };
+
+            const obj4 = {
+                name: '许嵩',
+                sex: '男',
+            };
+
+            // 浅拷贝：把 obj3 赋值给 obj4。这一行，是关键代码。这行代码的返回值也是 obj2
+           Object.assign(obj4,obj3)
+
+            console.log(JSON.stringify(obj4));
+</script>
+</body>
+</html>
