@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1"></div>
+
+<script>
+    //var div1 = document.getElementById("box1");      //方式一：通过id获取单个标签
+
+      //  var arr1 = document.getElementsByTagName("div");     //方式二：通过 标签名 获得 标签数组，所以有s
+
+       // var arr2 = document.getElementsByClassName("hehe");  //方式三：通过 类名 获得 标签数组，所以有s
+var box = document.getElementById('box1')
+box.onclick = function(){
+    alert("box click")
+}
+
+//第二种
+</script>
+</body>
+</html>

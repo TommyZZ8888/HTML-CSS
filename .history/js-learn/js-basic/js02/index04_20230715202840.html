@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正则表达式</title>
+</head>
+
+<body>
+    <script>
+        //myReg.test(str); // 判断字符串 str 是否符合 指定的 myReg 这个正则表达式的规则
+        //传两个参数时**：匹配模式 【重要】    var reg = new RegExp('A', 'i');
+       // - `i` 忽略大小写。这里的 i 指的是 ignore。 - `g` 全局匹配模式。这里的 g 指的是 global。
+        var reg = new RegExp("a");
+        var str1 = "stefanie";
+        var str2 = "gogo"
+        console.log(reg.test(str1))
+        console.log(reg.test(str2))
+
+
+
+    </script>
+</body>
+
+</html>
