@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset</title>
+</head>
+<style>
+      .box {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 10px solid #000;
+            margin: 100px;
+            background-color: pink;
+        }
+</style>
+<body>
+    <div class="box"></div>
+
+    <button>动画</button>
+    <div class="box1" style="left: 0px;"></div>
+
+<script>
+    //- offsetWidth = width + padding + border
+    //- offsetHeight = Height + padding + border
+
+    var div1 = document.getElementsByClassName("box")
+    console.log(div1.offsetHeight)
+
+    var btn = document.getElementsByTagName("button")[0]
+    var div = document.getElementsByClassName("box1")
+
+    btn.onclick = function (){
+        div.style.left = "500"
+    }
+
+</script>
+
+</body>
+</html>
