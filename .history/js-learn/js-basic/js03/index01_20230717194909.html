@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        position: absolute;
+    }
+</style>
+<body>
+    <button>运动到left=400px</button>
+    <div></div>
+<script>
+    var btn = document.getElementsByTagName("button")[0]
+    var div = document.getElementsByTagName("div")[0]
+
+    btn.onclick = function(){
+        setInterval(function(){
+            div.style.left = div.offsetLeft+(400-div.offsetLeft)/10 + "px"
+        },30)
+    }
+
+    function animate(ele,target){
+        clearInterval(ele.timer);
+
+        ele.timer  setInterval()
+    }
+</script>
+</body>
+</html>
