@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard event</title>
+</head>
+<style>
+    #box{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 100px auto;
+        position: absolute;
+    }
+</style>
+<body>
+<div id="box"></div>
+
+<script>
+    document.onkeydown = function(event){
+        event = event|| window.event;
+
+        var speed = 10;
+        if(event.ctrlKey){
+            console.log("smyhvae ctrl")
+            speed = 20;
+        }
+        //37 38 39 40 左 上 右 下
+        switch(){}
+    };
+
+    document.onkeyup = function(event){
+        console.log("key board up")
+    }
+</script>
+</body>
+</html>

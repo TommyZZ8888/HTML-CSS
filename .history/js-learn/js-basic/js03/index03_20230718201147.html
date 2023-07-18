@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <ul id="parent-list" style="background-color: #bfa;">
+        <li>
+            <p>im p element</p>
+        </li>
+<li><a href="javascript:;" class="link">超链接1</a></li>
+<li><a href="javascript:;" class="link">超链接2</a></li>
+<li><a href="javascript:;" class="link">超链接3</a></li>
+    </ul>
+
+<script>
+window.onload = function(){
+    document.getElementById("parent-list")
+    .addEventListener("click",function(event){
+        event = event||window.event;
+        if(event.target && event){}
+    })
+}
+</script>
+
+</body>
+</html>
