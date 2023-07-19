@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        list-style: none;
+    }
+    .wrap{
+        width: 300px;
+        height: 30px;
+        margin: 100px auto;
+        padding-left: 10px;
+        background-color: pink;
+    }
+
+    .wrap li{
+        background-color: yellow;
+    }
+    .wrap >ul > li{
+        float: left;
+        margin-left: 10px;
+        position: relative;
+    }
+    .wrap a{
+        display: block;
+        height: 30px;
+        width: 100px;
+        text-decoration: none;
+        color: #000;
+        line-height: 30px;
+        text-align: center;
+    }
+    .wrap li ul{}
+
+</style>
+<body>
+<div class="wrap">
+<ul>
+    <li>
+        <a href="javascript:void(0);">一级菜单1</a>
+        <ul>
+            <li><a href="javascript:void(0);">二级菜单1</a></li>
+            <li><a href="javascript:void(0);">二级菜单2</a></li>
+            <li><a href="javascript:void(0);">二级菜单3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:void(0);">一级菜单1</a>
+        <ul>
+            <li><a href="javascript:void(0);">二级菜单1</a></li>
+            <li><a href="javascript:void(0);">二级菜单2</a></li>
+            <li><a href="javascript:void(0);">二级菜单3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:void(0);">一级菜单1</a>
+        <ul>
+            <li><a href="javascript:void(0);">二级菜单1</a></li>
+            <li><a href="javascript:void(0);">二级菜单2</a></li>
+            <li><a href="javascript:void(0);">二级菜单3</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</body>
+</html>
