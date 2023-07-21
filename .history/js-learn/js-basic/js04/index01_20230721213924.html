@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery operate dom</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+
+    .current {
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <button>add</button>
+    <button>remove</button>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="current"></div>
+
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $("button:eq(0)").click(function(){
+                $("div").addClass("current")
+                alert($("div").hasClass("current"))
+            })
+
+            $("button:eq(1)").click(function(){
+                
+            })
+        })
+    </script>
+</body>
+
+</html>
