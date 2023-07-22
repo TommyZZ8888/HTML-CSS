@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .comment{
+        font-size: 50px;
+color: #FF3100;
+    }
+    .comment li{
+float: left;
+cursor: pointer;
+    }
+
+    ul{
+        list-style: none;
+    }
+</style>
+<body>
+    <ul class="comment">
+        <li>☆</li>
+        <li>☆</li>
+        <li>☆</li>
+        <li>☆</li>
+        <li>☆</li>
+    </ul>
+
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            var star_none = '☆'; // 空心五角星
+            var star_sel = '★'; // 实心五角星
+
+
+
+
+$(".comment li").click(function(){
+    $("li").attr("class","current").siblings("li").removeAttr
+})
+
+        })
+
+    </script>
+</body>
+</html>

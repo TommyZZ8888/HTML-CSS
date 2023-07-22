@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aaa{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button>bind</button>
+    <input type="text">
+    <input type="checkbox">
+
+
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script>
+
+$(function(){
+    var jqInp = $("input:eq(0)")
+    var jqInp2 = $("input:eq(1)")
+    var btn = $("button")
+
+    btn.click(function(){
+        jqInp.attr("title",111)
+        console.log(jqInp.attr("title"))
+
+        jqInp.attr("aaa",111)
+        console.log(jqInp.attr("aaa"))
+
+    })
+})
+
+</script>
+</body>
+</html>

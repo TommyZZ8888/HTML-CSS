@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery plugin</title>
+</head>
+<style>
+       div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+</style>
+<body>
+
+        <script src="../../jquery-3.5.1.min.js"></script>
+        <!--懒加载的使用。第一步：导包(必须在jquery库的下方）-->
+        <script src="../../jquery.lazyload.js"></script>
+            <script src="../../jquery.color.js"></script>
+            <script>
+                $(function () {
+                    //点击按钮，改变盒子的宽度和背景色
+                    $("button").on("click", function () {
+                        $("div").animate({ "width": 200, "background-color": "red" }, 2000, function () {
+                            alert("动画结束");
+                        });
+                    });
+
+                    //第二步骤：调用懒加载的方法实现功能。参数的不同，功能也不同。
+                    $("img.lazy").lazyload();
+                })
+            </script>
+            </head>
+
+            <body>
+                <button>变色</button>
+
+                <div></div>
+                <!--需要实现将图片设置为懒加载模式-->
+                <!-- <img class="lazy"  data-original="../images/01.png" width="640" height="480"> -->
+</body>
+</html>
