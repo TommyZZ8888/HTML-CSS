@@ -1,0 +1,1 @@
+var obj1 = {username:"tommy",age:26}
