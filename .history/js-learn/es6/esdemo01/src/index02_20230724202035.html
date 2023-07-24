@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // var a =1
+        // var b = 2
+        // var c= 3;
+
+        //第二种写法
+        // var arr =  [1,2,3]
+        // var a = arr[0]
+        // var b = arr[1];
+        // var c = arr[2];
+
+        // 第三种写法
+        let[a,b,c] = [1,2,3]
+
+        let[d,e] = ["stefanie"]
+        console.log(d+e)
+
+        let[f,g='sun']=['stefanie']
+        console.log(f+' '+g)
+
+            // var name = json.name;
+            // var age = json.age;
+            // var sex = json.sex;
+            const person = { name: 'qianguyihao', age: 28, sex: '男' };
+            let[name,age,sex] = person
+            console.log(name)
+            console.log(age)
+            console.log(sex)
+    </script>
+</body>
+</html>
