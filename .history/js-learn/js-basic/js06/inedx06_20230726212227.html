@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ // 定义一个异步的延迟函数：异步函数结束1秒之后，再执行cb回调函数
+    function fun1(cb) {
+        setTimeout(cb, 1000);
+    }
+
+    // 先执行异步函数fun1，再执行回调函数
+    fun1(function () {
+        console.log('我是延迟执行的cb回调函数');
+    });
+
+
+    //improve
+    
+</script>
+</body>
+</html>

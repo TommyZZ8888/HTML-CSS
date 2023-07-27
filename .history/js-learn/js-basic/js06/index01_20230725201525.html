@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 解释：先等同步任务执行完成后，再执行异步任务。
+    // setTimeout() / setInterval() 的每调用一次定时器的最小时间间隔是 ** 4毫秒 **
+    // 异步任务需要等待 1004 毫秒之后
+    console.log('sync mission 1')
+
+    setTimeout(() => {
+        console.log('async mission 1')
+    }, 0);
+
+    console.log('sync mission 2')
+
+
+    // 加载图片的异步任务
+     function loadImage(file,success,fail){
+const img = new Image();
+img.src = file;
+img.onload= ()=>{
+    success(img);
+};
+img.onerror = ()=>{
+    fail(new Error('img load fail'));
+};
+     }
+
+     loadImage(
+        '../image'
+     )
+</script>
+</body>
+</html>

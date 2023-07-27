@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promiseB = new Promise((resolve,reject)=>{
+           ajax('xxx.jason',(res)=>{
+            if (res.retCode==0) {
+                resolve('request success' + res);
+            } else {
+                // 接口请求失败时调用
+                reject({ retCode: -1, msg: 'network error' });
+           }});
+        });
+
+
+
+
+    </script>
+</body>
+</html>

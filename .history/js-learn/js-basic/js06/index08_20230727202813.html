@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myPromise = new Promise((resolve,reject)=>{
+            resolve('number one');
+        });
+
+myPromise.then((result) => {
+console.log('res1: ',result);
+return 'number two';
+    /*
+        上面这行 return，相当于：
+        return new Promise((resolve, reject)=> {
+            resolve('2号');
+        })
+        */
+}).then(res => {
+    // res可以接收到上一个 Promise 传递的值
+    console.log('res2:', res);
+})
+    .then(res => {
+        console.log('res3:', res);
+    });
+
+
+    const promise1 = new Promise((resolve, reject) => {
+            resolve('qianguyihao fulfilled 1');
+        });
+
+        const promise2 = new Promise((resolve, reject) => {
+            resolve('qianguyihao fulfilled 2');
+        });
+
+        promise1
+            .then(res => {
+                console.log('res1:', res);
+                return promise2;
+            })
+            .then(res => {
+                // 监听 promise2 的成功状态
+                console.log('res2:', res);
+            })
+            .then(res => {
+                console.log('res3', res);
+            });
+
+            const promise3 = new Promise((resolve,reject)=>{
+                reject('stefanie');
+            })
+    </script>
+
+</body>
+</html>
