@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //**同步任务 --> 微任务 --> 宏任务**。
+    setTimeout(() => {
+        // 宏任务
+        console.log('settimeout')
+    }, 0);
+
+    new Promise((resolve,reject)=>{
+        resolve();
+        //同步任务
+        console.log('promise1');
+    }).then(res=>
+    // 微任务
+    console.log('promise then'));
+
+    console.log('sync')
+
+//**先把当前这个宏任务执行完**，再去**创建并执行**微任务。
+    new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve();
+                console.log('setTimeout'); // 宏任务
+            }, 0);
+            console.log('promise1');
+        }).then((res) => {
+            // 微任务
+            console.log('promise then');
+        });
+
+        console.log('同步任务');
+</script>
+</body>
+</html>

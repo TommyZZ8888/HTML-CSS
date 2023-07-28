@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foo(){
+            throw new Error('err');
+        }
+
+        try {
+            foo();
+        } catch (error) {
+console.log(error)
+        }
+
+
+        const myPromise = new Promise((resolve,reject)=>{
+            resolve('stefanie');
+        });
+
+        myPromise.then(res=>{
+             // 显然，person 并没有 forEach()方法。所以，代码在执行时，会遇到异常。
+            const person = { name: 'vae' };
+            person.forEach(item => {
+                console.log('item:', item);
+            })
+            // 这行代码不会执行，因为上面的代码报错了
+            console.log('qianguyihao2');
+        })
+    </script>
+</body>
+</html>

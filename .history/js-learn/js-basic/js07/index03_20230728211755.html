@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //async
+        async function foo() {
+            return 'stefanie';
+            // 上面这行代码相;当于：return Promise.resolve('stefanie');
+        };
+
+        foo().then(res => console.log('res: ', res))
+
+
+        // 【公共方法层】封装 ajax 请求的伪代码。传入请求地址、请求参数，以及回调函数 success 和 fail。
+        function requestAjax(url, params, success, fail) {
+            var xhr = new xhrRequest();
+            // 设置请求方法、请求地址。请求地址的格式一般是：'https://api.example.com/data?' + 'key1=value1&key2=value2'
+            xhr.open('GET', url);
+            // 设置请求头（如果需要）
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    success && success(xhr.responseText);
+                } else {
+                    fail && fail(new Error('接口请求失败'));
+                }
+            };
+        }
+
+        // 【model层】将接口请求封装为 Promise
+        function requestData1(params_1) {
+            return new Promise((resolve, reject) => {
+                requestAjax('https://api.qianguyihao.com/url_1', params_1, res => {
+                    // 这里的 res 是接口返回的数据。返回码 retCode 为 0 代表接口请求成功。
+                    if (res.retCode == 0) {
+                        // 接口请求成功时调用
+                        resolve('request success' + res);
+                    } else {
+                        // 接口请求异常时调用
+                        reject({ retCode: -1, msg: 'network error' });
+                    }
+                });
+            });
+        }
+
+
+        // requestData2、requestData3的写法与 requestData1类似。他们的请求地址、请求参数、接口返回结果不同，所以需要挨个单独封装 Promise。
+        function requestData2(params_2) {
+            return new Promise((resolve, reject) => {
+                requestAjax('https://api.qianguyihao.com/url_2', params_2, res => {
+                    if (res.retCode == 0) {
+                        resolve('request success' + res);
+                    } else {
+                        reject({ retCode: -1, msg: 'network error' });
+                    }
+                });
+            });
+        }
+
+        function requestData3(params_3) {
+            return new Promise((resolve, reject) => {
+                requestAjax('https://api.qianguyihao.com/url_3', params_3, res => {
+                    if (res.retCode == 0) {
+                        resolve('request success' + res);
+                    } else {
+                        reject({ retCode: -1, msg: 'network error' });
+                    }
+                });
+            });
+        }
+
+        // 封装：用 async ... await 调用 Promise 链式请求
+        async function getData() {
+            // 【关键代码】
+            const res1 = await requestData1('params_1');
+            const res2 = await requestData2(res1);
+            const res3 = await requestData3(res2);
+        }
+
+        getData();
+    </script>
+</body>
+
+</html>

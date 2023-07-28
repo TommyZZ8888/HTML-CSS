@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function foo(flag) {
+            if (flag) {
+                return Promise.resolve('success');
+            } else {
+                return Promise.reject('fail');
+            }
+        };
+
+        foo(true).then(res => console.log('res: ', res));
+        foo(false).catch(err => console.log('err: ', err));
+
+        const promise1 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('执行 promise1');
+                    resolve('promise 1 成功');
+                }, 1000);
+            });
+
+            const promise2 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('执行 promise2');
+                    // 这里通过 reject() 的方式，表示任务执行失败
+                    reject('promise 2 失败');
+                }, 2000);
+            });
+
+            const promise3 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('执行 promise3');
+                    resolve('promise 3 成功');
+                }, 3000);
+            });
+
+            Promise.all([promise1,promise2,promise3])
+            .then((result) => {
+
+            }).catch((err) => {
+
+            });
+    </script>
+
+</body>
+
+</html>
