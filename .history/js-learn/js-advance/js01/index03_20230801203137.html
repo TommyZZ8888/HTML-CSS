@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const myObj1 = { strArr: ['ste', 'fan', 'ie'] };
+
+        let index = 0;
+        const strArrIterator = {
+            next: () => {
+                if (index < myObj1.strArr.length) {
+                    return { done: false, value: myObj1.strArr[index++] };
+                } else {
+                    return { done: true };
+                }
+            },
+        };
+
+        // console.log(strArrIterator.next())
+
+        //封装迭代器
+        const myObj2 = {
+            strArr2 : ['ste', 'fan', 'ie'],
+            [Symbol.iterator]: function () {
+                let index = 0;
+                const strArrIterator2 = {
+                    next: () => {
+                        if (index < this.strArr2.length) {
+                            return { done: false, value: myObj2.strArr2[index++] };
+                        } else {
+                            return { done: true };
+                        }
+                    },
+
+                    return: ()=>{
+                        console.log('iterator interrupt');
+                        
+                    }
+                };
+                return strArrIterator2;
+            },
+        };
+
+        const strArrIterator3 = myObj2[Symbol.iterator]();
+console.log(strArrIterator3.next())
+
+    </script>
+</body>
+
+</html>

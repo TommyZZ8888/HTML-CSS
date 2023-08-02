@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function* foo(){
+        console.log('step 1');
+        const res2 = yield 'a';
+
+        console.log('step 2',res2);
+        const res3 = yield 'b';
+
+        console.log('')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function deepClone(obj) {
+            let cloneObj = {}
+            for (let key in obj) {
+                if (typeof obj[key] === 'object') {
+                    cloneObj[key] = deepClone(obj[key])
+                } else {
+                    cloneObj[key] = obj[key]
+                }
+            }
+            return cloneObj;
+        }
+
+        let obj1 = {
+            a: {
+                b: 1
+            }
+        }
+
+        let obj2 = deepClone(obj1);
+        obj1.a.b = 2
+        console.log(obj2)
+
+
+        //改进版
+        function cloneDeep(obj,map=new WeakMap()){
+            if(typeof obj !=='object' || obj==null){
+//避免循环引用
+const objFromMap = map.get(obj);
+if(objFromMap){
+    return objFromMap;
+}
+
+let target = {};
+map.set(obj,target);
+
+if(obj instanceof Map){
+    target = new Map();
+    obj.forEach((k,v)=>{
+        const v1 = cloneDeep(v,map);
+        const k1 = cloneDeep(k,map);
+        target.set(k1,v1);
+    })
+}
+                // Set
+                if (obj instanceof Set) {
+                    target = new Set()
+                    obj.forEach(v => {
+                        const v1 = cloneDeep(v, map)
+                        target.add(v1)
+                    })
+                }
+
+                // Array
+                if (obj instanceof Array) {
+                    target = obj.map(item => cloneDeep(item, map))
+                }
+
+                // Object
+                for (const key in obj) {
+                    const val = obj[key]
+                    const val1 = cloneDeep(val, map)
+                    target[key] = val1
+                }
+
+                return target
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
