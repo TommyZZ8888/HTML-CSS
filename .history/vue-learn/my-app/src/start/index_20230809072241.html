@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script> -->
+    <script src="../vue.js"></script>
+</head>
+<style>
+    /* [v-cloak]{
+        display: none;
+    } */
+</style>
+
+<body>
+    <div id="div1">
+        <span v-text="name"></span>
+        <p v-html="name"> </p>
+        <!-- <a v-bind="{href:'http://www.baidu.com/'+path}">超链接</a> -->
+        <button v-on:click="change">改变name的值</button>
+    </div>
+</body>
+
+<script>
+   var myVue = new Vue({
+        el: '#div1',
+        data: {
+            name: '<h1>我是一个大大的h1标题</h1>',
+            // path: '2.html'
+        },
+        // /注意，下方这个 `methods` 是Vue中定义方法的关键字，不能改
+        //这个 methods 属性中定义了当前Vue实例所有可用的方法
+        methods: {
+            change: function() {
+            this.name = 'hi'
+    }
+    }
+    });
+
+
+</script>
+</body>
+
+</html>
