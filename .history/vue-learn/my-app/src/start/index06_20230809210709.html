@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="../vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <li>{{list[0]}}</li>
+            <li>{{list[1]}}</li>
+            <li>{{list[2]}}</li>
+
+            <li v-for="item in list">{{item}}</li>
+                <!-- 对象数组的遍历。括号里如果写两个参数：第一个参数代表数组的单个item，第二个参数代表 index 索引-->
+                <li v-for="(item, index) in dataList">姓名：{{item.name}} --- 年龄：{{item.age}} --- 索引：{{index}}</li>
+        </ul>
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                list: [1,2,3],
+                 dataList: [
+                    { name: 'smyh', age: '26' },
+                    { name: 'vae', age: '32' },
+                    { name: 'xiaoming', age: '20' }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

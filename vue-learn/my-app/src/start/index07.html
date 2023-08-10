@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+<style>
+    .table {
+        width: 800px;
+        height: 200px;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+
+    .table th {
+        color: skyblue;
+        border: 5px green solid;
+        font-size: 16px;
+        padding: 5px;
+        background: #0094ff;
+    }
+
+    .table tr td {
+        border: 1px black solid;
+        text-align: center;
+        color: red;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div class="form">
+
+            编号：<input type="text" v-model="formData.id">
+            名称：<input type="text" v-model="formData.name">
+
+            <button v-on:click="addData">添加</button>
+            search:
+            <input type="text" v-model="keywords">
+        </div>
+
+
+        <table class="table">
+            <th>num</th>
+            <th>name</th>
+            <th>createTime</th>
+            <th>operate</th>
+            <tr v-for="item in list">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.ctime}}</td>
+                <!--绑定delete事件，根据括号里的参数进行删除-->
+                <td><a href="#" v-on:click="delData(item.id)">删除</a></td>
+            </tr>
+            <tr v-show="list.length == 0">
+                <td colspan="4">列表无数据</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                list: [{ id: 1, name: 'benc', ctime: new Date }, { id: 2, name: 'dasauto', ctime: new Date }]
+                , formData: {
+                    id: 0,
+                    name: ""
+                },
+                keywords: ""
+            },
+            methods: {
+                addData: function () {
+                    var p = { id: this.formData.id, name: this.formData.name, ctime: new Date() };
+                    this.list.push(p);
+                    this.formData.id = '';
+                    this.formData.name = '';
+
+                },
+                delData: function (id) {
+                    // 0 提醒用户是否要删除数据
+                    if (!confirm('是否要删除数据?')) {
+                        //当用户点击的取消按钮的时候，应该阻断这个方法中的后面代码的继续执行
+                        return;
+                    }
+
+                    // 1 调用list.findIndex()方法根据传入的id获取到这个要删除数据的索引值（在数组中的索引值）
+                    var index = this.list.findIndex(function (item) {
+                        return item.id == id
+                    });
+
+                    // 2.0 调用方法：list.splice(待删除的索引, 删除的元素个数)
+                    this.list.splice(index, 1);
+                },
+                search(keyword) {
+                    var newList = this.filter(item => {
+                        if (item.name.includes(keyword)) {
+                            return item
+                        }
+                    })
+                    return newList
+                }
+            }
+        })
+
+
+    </script>
+
+</body>
+
+</html>

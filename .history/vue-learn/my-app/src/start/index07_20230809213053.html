@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="../vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+<table class="table">
+    <th>num</th>
+    <th>name</th>
+    <th>createTime</th>
+<th>opera</th>
+</table>
+    </div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+list: [{id: 1,name: 'benc', ctime: new Date},{id: 2,name: 'dasauto',ctime: new Date}]
+        }
+    })
+</script>
+
+</body>
+</html>
